@@ -1,0 +1,1279 @@
+{
+  "voiceId": "EXAVITQu4vr4xnSDxMaL",
+  "model": "eleven_multilingual_v2",
+  "clips": {
+    "amazing": {
+      "file": "amazing.mp3",
+      "text": "Amazing!",
+      "hash": "77e565204caa2939",
+      "bytes": 7985
+    },
+    "all_done": {
+      "file": "all_done.mp3",
+      "text": "All done! Great work today.",
+      "hash": "440ccfb2c08b2428",
+      "bytes": 17180
+    },
+    "backward": {
+      "file": "backward.mp3",
+      "text": "Good shape! Next time, start at the top.",
+      "hash": "c04d231c5e578808",
+      "bytes": 20524
+    },
+    "find_real": {
+      "file": "find_real.mp3",
+      "text": "Find the real",
+      "hash": "4f39fd2c57652fe4",
+      "bytes": 9866
+    },
+    "fading": {
+      "file": "fading.mp3",
+      "text": "Now the road is fading. Follow it from memory!",
+      "hash": "4cbd21145652121f",
+      "bytes": 22404
+    },
+    "bed_trick": {
+      "file": "bed_trick.mp3",
+      "text": "Make two fists with your thumbs up. Your left hand makes little bee, and your right hand makes little dee. Together they spell, bed!",
+      "hash": "81b8cd813c5f826b",
+      "bytes": 67126
+    },
+    "flipped": {
+      "file": "flipped.mp3",
+      "text": "Oops! That one is facing the wrong way.",
+      "hash": "7b65366b0fd7df53",
+      "bytes": 18852
+    },
+    "great": {
+      "file": "great.mp3",
+      "text": "Great job!",
+      "hash": "f5c60ce14dabc049",
+      "bytes": 9030
+    },
+    "hello": {
+      "file": "hello.mp3",
+      "text": "Hi! I'm Dot. Let's write together!",
+      "hash": "dcbcf67663304cc1",
+      "bytes": 18016
+    },
+    "just_dots": {
+      "file": "just_dots.mp3",
+      "text": "This time, just the dots. You know the way!",
+      "hash": "bad139626527ce6e",
+      "bytes": 18852
+    },
+    "keep_going": {
+      "file": "keep_going.mp3",
+      "text": "Keep going!",
+      "hash": "f3bb7a5cbd17bcd3",
+      "bytes": 7567
+    },
+    "lets_go": {
+      "file": "lets_go.mp3",
+      "text": "Let's go!",
+      "hash": "a1136347a6798cd9",
+      "bytes": 6940
+    },
+    "lets_write": {
+      "file": "lets_write.mp3",
+      "text": "Let's write",
+      "hash": "331cffa1411597b0",
+      "bytes": 7149
+    },
+    "look_again": {
+      "file": "look_again.mp3",
+      "text": "Not quite. Look again!",
+      "hash": "c89c09977ac47d6f",
+      "bytes": 12373
+    },
+    "looks_like": {
+      "file": "looks_like.mp3",
+      "text": "Hmm, that looks like",
+      "hash": "5c5eacdcb7b982d3",
+      "bytes": 12373
+    },
+    "next_one": {
+      "file": "next_one.mp3",
+      "text": "Next one!",
+      "hash": "1bc080a4cf56cbf5",
+      "bytes": 6522
+    },
+    "nice": {
+      "file": "nice.mp3",
+      "text": "Nice!",
+      "hash": "76144b8d4b68b45c",
+      "bytes": 5686
+    },
+    "one_star": {
+      "file": "one_star.mp3",
+      "text": "One star!",
+      "hash": "fea0153e5602a9e0",
+      "bytes": 7985
+    },
+    "pick_game": {
+      "file": "pick_game.mp3",
+      "text": "Pick a game!",
+      "hash": "f5bcde31cbe59598",
+      "bytes": 7985
+    },
+    "other_end": {
+      "file": "other_end.mp3",
+      "text": "Oops, that's the wrong end. Start at the green dot!",
+      "hash": "c5d9daee16e605f1",
+      "bytes": 23867
+    },
+    "pop_backwards": {
+      "file": "pop_backwards.mp3",
+      "text": "Pop the backwards ones!",
+      "hash": "5793595de24e1be9",
+      "bytes": 13627
+    },
+    "quest_done": {
+      "file": "quest_done.mp3",
+      "text": "Quest complete! You're a writing superstar!",
+      "hash": "d2697c35b82fd4ba",
+      "bytes": 20315
+    },
+    "so_close": {
+      "file": "so_close.mp3",
+      "text": "So close! Let's try again.",
+      "hash": "f468f3c41947fa3b",
+      "bytes": 13836
+    },
+    "start_at_dot": {
+      "file": "start_at_dot.mp3",
+      "text": "Start at the green dot!",
+      "hash": "d7ecd4c527f6ecb1",
+      "bytes": 12791
+    },
+    "super": {
+      "file": "super.mp3",
+      "text": "Super!",
+      "hash": "224be4c77904013f",
+      "bytes": 7567
+    },
+    "stay_on_road": {
+      "file": "stay_on_road.mp3",
+      "text": "Whoops! Stay on the road.",
+      "hash": "1a995715850b95a9",
+      "bytes": 14254
+    },
+    "sticker": {
+      "file": "sticker.mp3",
+      "text": "You earned a new sticker!",
+      "hash": "02aa430397a901c0",
+      "bytes": 12791
+    },
+    "tap_real": {
+      "file": "tap_real.mp3",
+      "text": "Tap the real one!",
+      "hash": "fbb5a02f57964da2",
+      "bytes": 11746
+    },
+    "tap_check": {
+      "file": "tap_check.mp3",
+      "text": "Tap the green check when you're done.",
+      "hash": "b24ca55846e40ac3",
+      "bytes": 16553
+    },
+    "that_backwards": {
+      "file": "that_backwards.mp3",
+      "text": "That one's backwards. Try again!",
+      "hash": "65855b91d0a74172",
+      "bytes": 17598
+    },
+    "three_stars": {
+      "file": "three_stars.mp3",
+      "text": "Three stars!",
+      "hash": "690f75593c7aeb20",
+      "bytes": 10284
+    },
+    "that_upside": {
+      "file": "that_upside.mp3",
+      "text": "That one's upside down. Try again!",
+      "hash": "61f57aecc97ffa13",
+      "bytes": 15717
+    },
+    "that_was_right": {
+      "file": "that_was_right.mp3",
+      "text": "Oops, that one was right! Pop the backwards ones.",
+      "hash": "72c2934891a2cbb1",
+      "bytes": 22195
+    },
+    "try_again": {
+      "file": "try_again.mp3",
+      "text": "Let's try that again.",
+      "hash": "ec20a4412a01cf6f",
+      "bytes": 11328
+    },
+    "two_stars": {
+      "file": "two_stars.mp3",
+      "text": "Two stars!",
+      "hash": "58e25aa320a4047f",
+      "bytes": 9866
+    },
+    "upside": {
+      "file": "upside.mp3",
+      "text": "Oops! That one is upside down.",
+      "hash": "a74632cae8b9a19c",
+      "bytes": 15717
+    },
+    "watch_me": {
+      "file": "watch_me.mp3",
+      "text": "Watch me first.",
+      "hash": "a2d3f1f1835e05df",
+      "bytes": 9866
+    },
+    "watch_dot": {
+      "file": "watch_dot.mp3",
+      "text": "Watch Dot show you the way.",
+      "hash": "a95ae2b186128138",
+      "bytes": 14254
+    },
+    "welcome": {
+      "file": "welcome.mp3",
+      "text": "Welcome back! Ready to play?",
+      "hash": "ebc8379610401c9f",
+      "bytes": 13627
+    },
+    "which_one": {
+      "file": "which_one.mp3",
+      "text": "Which one is it?",
+      "hash": "505991334e4312e8",
+      "bytes": 7567
+    },
+    "wow": {
+      "file": "wow.mp3",
+      "text": "Wow! Perfect!",
+      "hash": "957b0735a30544b0",
+      "bytes": 12791
+    },
+    "write_it": {
+      "file": "write_it.mp3",
+      "text": "Now write it all by yourself!",
+      "hash": "ec9cfc7e6057a36a",
+      "bytes": 14672
+    },
+    "you_did_it": {
+      "file": "you_did_it.mp3",
+      "text": "You did it!",
+      "hash": "98bcfefbac3ae49e",
+      "bytes": 7567
+    },
+    "yes_thats": {
+      "file": "yes_thats.mp3",
+      "text": "Yes! That's",
+      "hash": "9561090224d59d35",
+      "bytes": 9866
+    },
+    "your_turn": {
+      "file": "your_turn.mp3",
+      "text": "Your turn! Start at the green dot.",
+      "hash": "058c9490af5867c2",
+      "bytes": 20941
+    },
+    "glyph.d2.name": {
+      "file": "glyph.d2.name.mp3",
+      "text": "two",
+      "hash": "0fb17108af08e683",
+      "bytes": 6940
+    },
+    "glyph.d2.flip": {
+      "file": "glyph.d2.flip.mp3",
+      "text": "The two curls to the right at the top, and its flat foot points to the right.",
+      "hash": "52c39248aff614de",
+      "bytes": 35152
+    },
+    "glyph.d2.rhyme": {
+      "file": "glyph.d2.rhyme.mp3",
+      "text": "Curve around like a swan, slide down to the corner, then zip across. That's a two!",
+      "hash": "60ca0bd2eb8ff937",
+      "bytes": 43302
+    },
+    "glyph.d3.flip": {
+      "file": "glyph.d3.flip.mp3",
+      "text": "Both bumps of the three stick out to the right.",
+      "hash": "a3b6044dae342e90",
+      "bytes": 20941
+    },
+    "glyph.d3.name": {
+      "file": "glyph.d3.name.mp3",
+      "text": "three",
+      "hash": "872c41a2c7aff5d0",
+      "bytes": 6522
+    },
+    "glyph.d5.name": {
+      "file": "glyph.d5.name.mp3",
+      "text": "five",
+      "hash": "0a049f75abaa9c47",
+      "bytes": 6940
+    },
+    "glyph.d3.rhyme": {
+      "file": "glyph.d3.rhyme.mp3",
+      "text": "Curve around the top, then curve around the bottom. That's a three!",
+      "hash": "cb75d4923e51ca52",
+      "bytes": 28465
+    },
+    "glyph.d5.flip": {
+      "file": "glyph.d5.flip.mp3",
+      "text": "The five's hat points to the right, and its belly is on the right too.",
+      "hash": "02f56de85bacc3eb",
+      "bytes": 31808
+    },
+    "glyph.d6.name": {
+      "file": "glyph.d6.name.mp3",
+      "text": "six",
+      "hash": "2435679087882693",
+      "bytes": 6104
+    },
+    "glyph.d6.flip": {
+      "file": "glyph.d6.flip.mp3",
+      "text": "The six's loop is at the bottom.",
+      "hash": "f54a9bc8b4c7612b",
+      "bytes": 15090
+    },
+    "glyph.d5.rhyme": {
+      "file": "glyph.d5.rhyme.mp3",
+      "text": "Line down, big belly around, then a hat on top. That's a five!",
+      "hash": "fff6483013246c52",
+      "bytes": 36197
+    },
+    "glyph.d7.name": {
+      "file": "glyph.d7.name.mp3",
+      "text": "seven",
+      "hash": "d1379111609b6326",
+      "bytes": 6522
+    },
+    "glyph.d7.flip": {
+      "file": "glyph.d7.flip.mp3",
+      "text": "The seven's top goes to the right, then it slides down to the left.",
+      "hash": "5bd4146886a1993e",
+      "bytes": 33689
+    },
+    "glyph.d6.rhyme": {
+      "file": "glyph.d6.rhyme.mp3",
+      "text": "Curve down and around, then close the loop at the bottom. That's a six!",
+      "hash": "91107aff905217d9",
+      "bytes": 34316
+    },
+    "glyph.d9.name": {
+      "file": "glyph.d9.name.mp3",
+      "text": "nine",
+      "hash": "bafedf14b557a66c",
+      "bytes": 7149
+    },
+    "glyph.d7.rhyme": {
+      "file": "glyph.d7.rhyme.mp3",
+      "text": "Across the top, then slide down. That's a seven!",
+      "hash": "888b2d109496749d",
+      "bytes": 27211
+    },
+    "glyph.d9.flip": {
+      "file": "glyph.d9.flip.mp3",
+      "text": "The nine's circle is at the top, and the line goes down.",
+      "hash": "98f2f47b5b89c2d9",
+      "bytes": 27002
+    },
+    "glyph.d9.rhyme": {
+      "file": "glyph.d9.rhyme.mp3",
+      "text": "Make a circle, then a line straight down. That's a nine!",
+      "hash": "6f04cf3ce11071b4",
+      "bytes": 28047
+    },
+    "glyph.lb.name": {
+      "file": "glyph.lb.name.mp3",
+      "text": "little bee",
+      "hash": "54813a7bd2d7cd67",
+      "bytes": 7567
+    },
+    "glyph.lb.flip": {
+      "file": "glyph.lb.flip.mp3",
+      "text": "The b has its belly on the right. Bat first, then ball.",
+      "hash": "dc23987a47253c7a",
+      "bytes": 28883
+    },
+    "glyph.ld.name": {
+      "file": "glyph.ld.name.mp3",
+      "text": "little dee",
+      "hash": "9f43d55970f31f46",
+      "bytes": 7985
+    },
+    "glyph.lb.rhyme": {
+      "file": "glyph.lb.rhyme.mp3",
+      "text": "Big line down, bounce up, and make a belly on the right. That's little bee!",
+      "hash": "27f4d38d2c09a051",
+      "bytes": 35152
+    },
+    "glyph.ld.flip": {
+      "file": "glyph.ld.flip.mp3",
+      "text": "The d has its bump on the left. Make the c first, then the tall line.",
+      "hash": "847184693bb041e2",
+      "bytes": 36197
+    },
+    "glyph.ld.rhyme": {
+      "file": "glyph.ld.rhyme.mp3",
+      "text": "Make a c, then a big line up and down. That's little dee!",
+      "hash": "20ca1baadcc91374",
+      "bytes": 29928
+    },
+    "glyph.lj.name": {
+      "file": "glyph.lj.name.mp3",
+      "text": "little jay",
+      "hash": "f2eb89a9fb944501",
+      "bytes": 9448
+    },
+    "glyph.lj.flip": {
+      "file": "glyph.lj.flip.mp3",
+      "text": "The j curls to the left at the bottom, like a hook.",
+      "hash": "3170819058dc631c",
+      "bytes": 24285
+    },
+    "glyph.lp.flip": {
+      "file": "glyph.lp.flip.mp3",
+      "text": "The p has its bump on the right, and its tail goes down.",
+      "hash": "af311f9bf1bdb0ec",
+      "bytes": 27211
+    },
+    "glyph.lp.name": {
+      "file": "glyph.lp.name.mp3",
+      "text": "little pee",
+      "hash": "f5b7b0847e21f7b4",
+      "bytes": 9866
+    },
+    "glyph.lj.rhyme": {
+      "file": "glyph.lj.rhyme.mp3",
+      "text": "Line down with a hook to the left, then a dot on top. That's little jay!",
+      "hash": "cd8443b313702032",
+      "bytes": 37660
+    },
+    "glyph.lq.name": {
+      "file": "glyph.lq.name.mp3",
+      "text": "little cue",
+      "hash": "dd4f743a50859db8",
+      "bytes": 9030
+    },
+    "glyph.lp.rhyme": {
+      "file": "glyph.lp.rhyme.mp3",
+      "text": "Line down, way down, then a bump on the right. That's little pee!",
+      "hash": "5bae3f791311a083",
+      "bytes": 32853
+    },
+    "glyph.lq.flip": {
+      "file": "glyph.lq.flip.mp3",
+      "text": "The q has its bump on the left, and its tail goes down.",
+      "hash": "39421957cb815b35",
+      "bytes": 28465
+    },
+    "glyph.lq.rhyme": {
+      "file": "glyph.lq.rhyme.mp3",
+      "text": "Make a c, then a line down, way down. That's little cue!",
+      "hash": "11af3871120acd72",
+      "bytes": 33271
+    },
+    "glyph.ls.name": {
+      "file": "glyph.ls.name.mp3",
+      "text": "little ess",
+      "hash": "0dc772e13f149b9d",
+      "bytes": 10493
+    },
+    "glyph.ls.flip": {
+      "file": "glyph.ls.flip.mp3",
+      "text": "The s starts at the top right and curves to the left first.",
+      "hash": "e5d1f2bc43fef403",
+      "bytes": 29928
+    },
+    "glyph.ls.rhyme": {
+      "file": "glyph.ls.rhyme.mp3",
+      "text": "Curve to the left, slide across, then curve back. That's little ess!",
+      "hash": "2cf4c3aeb12c182c",
+      "bytes": 33898
+    },
+    "glyph.lz.name": {
+      "file": "glyph.lz.name.mp3",
+      "text": "little zee",
+      "hash": "36c68fa0e58e3d80",
+      "bytes": 8821
+    },
+    "glyph.lz.flip": {
+      "file": "glyph.lz.flip.mp3",
+      "text": "The z zips to the right, slides down to the left, then zips right again.",
+      "hash": "ce168d7a8c95025a",
+      "bytes": 40377
+    },
+    "pair.69": {
+      "file": "pair.69.mp3",
+      "text": "Is this a six, or a nine?",
+      "hash": "38e9e995af1baa7f",
+      "bytes": 13836
+    },
+    "glyph.lz.rhyme": {
+      "file": "glyph.lz.rhyme.mp3",
+      "text": "Zip across, slide down, zip across. That's little zee!",
+      "hash": "4dab0d938dd66511",
+      "bytes": 29510
+    },
+    "pair.25": {
+      "file": "pair.25.mp3",
+      "text": "Is this a two, or a five?",
+      "hash": "4f29f164cfb501f9",
+      "bytes": 12791
+    },
+    "pair.bd": {
+      "file": "pair.bd.mp3",
+      "text": "Is this little bee, or little dee?",
+      "hash": "8d17495f9081a6bf",
+      "bytes": 19061
+    },
+    "pair.bp": {
+      "file": "pair.bp.mp3",
+      "text": "Is this little bee, or little pee?",
+      "hash": "649ae9bb5ea79d23",
+      "bytes": 20524
+    },
+    "pair.dq": {
+      "file": "pair.dq.mp3",
+      "text": "Is this little dee, or little cue?",
+      "hash": "c4aa602f1f8e3d4f",
+      "bytes": 20524
+    },
+    "pair.mw": {
+      "file": "pair.mw.mp3",
+      "text": "Is this little em, or little double-you?",
+      "hash": "001ea7f02ea1365f",
+      "bytes": 20315
+    },
+    "pair.nu": {
+      "file": "pair.nu.mp3",
+      "text": "Is this little en, or little you?",
+      "hash": "2ec5289e8f9a7bba",
+      "bytes": 19061
+    },
+    "pair.pq": {
+      "file": "pair.pq.mp3",
+      "text": "Is this little pee, or little cue?",
+      "hash": "8645b9ca9c0c53d3",
+      "bytes": 19061
+    },
+    "glyph.d0.name": {
+      "file": "glyph.d0.name.mp3",
+      "text": "zero",
+      "hash": "e209ac097c427e78",
+      "bytes": 6940
+    },
+    "glyph.d1.name": {
+      "file": "glyph.d1.name.mp3",
+      "text": "one",
+      "hash": "628879029994115f",
+      "bytes": 4223
+    },
+    "glyph.d0.rhyme": {
+      "file": "glyph.d0.rhyme.mp3",
+      "text": "Start at the top and curve all the way around. That's a zero!",
+      "hash": "5dd65ec5a38ba534",
+      "bytes": 28883
+    },
+    "glyph.d1.rhyme": {
+      "file": "glyph.d1.rhyme.mp3",
+      "text": "Start at the top and go straight down. That's an one!",
+      "hash": "a71ad4cb8998ad8e",
+      "bytes": 30555
+    },
+    "glyph.d4.flip": {
+      "file": "glyph.d4.flip.mp3",
+      "text": "The four has its little lines on the left, and the big line on the right.",
+      "hash": "a51bf6b4a13f22f6",
+      "bytes": 30973
+    },
+    "glyph.d4.name": {
+      "file": "glyph.d4.name.mp3",
+      "text": "four",
+      "hash": "34e9be46210c68c1",
+      "bytes": 7149
+    },
+    "glyph.d8.name": {
+      "file": "glyph.d8.name.mp3",
+      "text": "eight",
+      "hash": "f8409c2ab0cc0d3e",
+      "bytes": 5686
+    },
+    "glyph.d4.rhyme": {
+      "file": "glyph.d4.rhyme.mp3",
+      "text": "Little line down, little line across, then a big line down. That's a four!",
+      "hash": "afc62437d39d70c6",
+      "bytes": 39959
+    },
+    "glyph.d8.rhyme": {
+      "file": "glyph.d8.rhyme.mp3",
+      "text": "Make an S, then climb back up to close it. That's an eight!",
+      "hash": "8b86d99a8d8f2bba",
+      "bytes": 29928
+    },
+    "glyph.la.flip": {
+      "file": "glyph.la.flip.mp3",
+      "text": "The a has its line on the right side.",
+      "hash": "e47292623eb21a41",
+      "bytes": 19479
+    },
+    "glyph.la.name": {
+      "file": "glyph.la.name.mp3",
+      "text": "little ay",
+      "hash": "f7fc622d9e96d2a4",
+      "bytes": 7149
+    },
+    "glyph.la.rhyme": {
+      "file": "glyph.la.rhyme.mp3",
+      "text": "Make a c, then a line down on the right. That's little ay!",
+      "hash": "cb52faca3b4f9d12",
+      "bytes": 31808
+    },
+    "glyph.lc.name": {
+      "file": "glyph.lc.name.mp3",
+      "text": "little see",
+      "hash": "aa2c6bf6e0bb1b4a",
+      "bytes": 9030
+    },
+    "glyph.lc.flip": {
+      "file": "glyph.lc.flip.mp3",
+      "text": "The c opens to the right, like a mouth taking a bite.",
+      "hash": "d6a96ab9219e962e",
+      "bytes": 25121
+    },
+    "glyph.lc.rhyme": {
+      "file": "glyph.lc.rhyme.mp3",
+      "text": "Start near the top, curve around to the left, and stop. That's little see!",
+      "hash": "e14890dd0b8bc93f",
+      "bytes": 37033
+    },
+    "glyph.le.name": {
+      "file": "glyph.le.name.mp3",
+      "text": "little ee",
+      "hash": "c88236432211841a",
+      "bytes": 11328
+    },
+    "glyph.le.flip": {
+      "file": "glyph.le.flip.mp3",
+      "text": "The e's straight line goes to the right, then it curls around to the left.",
+      "hash": "6f32fae920d350ac",
+      "bytes": 35152
+    },
+    "glyph.lf.name": {
+      "file": "glyph.lf.name.mp3",
+      "text": "little eff",
+      "hash": "d398b69dca43b5fd",
+      "bytes": 7149
+    },
+    "glyph.lf.flip": {
+      "file": "glyph.lf.flip.mp3",
+      "text": "The f's curve is at the top, and its little line crosses the middle.",
+      "hash": "19bcc115cda9ef80",
+      "bytes": 32435
+    },
+    "glyph.le.rhyme": {
+      "file": "glyph.le.rhyme.mp3",
+      "text": "Little line across, then curve around to the left. That's little ee!",
+      "hash": "10ae072e858023af",
+      "bytes": 32435
+    },
+    "glyph.lg.name": {
+      "file": "glyph.lg.name.mp3",
+      "text": "little gee",
+      "hash": "b96938dd39761303",
+      "bytes": 8403
+    },
+    "glyph.lg.flip": {
+      "file": "glyph.lg.flip.mp3",
+      "text": "The g makes a c first, and its tail curls to the left.",
+      "hash": "ca06f350f72782f5",
+      "bytes": 27629
+    },
+    "glyph.lf.rhyme": {
+      "file": "glyph.lf.rhyme.mp3",
+      "text": "Curve at the top, big line down, then a little line across. That's little eff!",
+      "hash": "880f86cb63d47ae5",
+      "bytes": 42257
+    },
+    "glyph.lh.name": {
+      "file": "glyph.lh.name.mp3",
+      "text": "little aitch",
+      "hash": "a036669f2379e3eb",
+      "bytes": 9448
+    },
+    "glyph.lg.rhyme": {
+      "file": "glyph.lg.rhyme.mp3",
+      "text": "Make a c, then a line down with a curly tail. That's little gee!",
+      "hash": "5f220ba9aa8502e0",
+      "bytes": 29928
+    },
+    "glyph.lh.rhyme": {
+      "file": "glyph.lh.rhyme.mp3",
+      "text": "Big line down, then bump over to the right. That's little aitch!",
+      "hash": "0a88c456c43bf6b1",
+      "bytes": 30346
+    },
+    "glyph.li.name": {
+      "file": "glyph.li.name.mp3",
+      "text": "little eye",
+      "hash": "edbdc3408dc04a5c",
+      "bytes": 8403
+    },
+    "glyph.li.rhyme": {
+      "file": "glyph.li.rhyme.mp3",
+      "text": "Little line down, then a dot on top. That's little eye!",
+      "hash": "c127ceaa97fdf20b",
+      "bytes": 26584
+    },
+    "glyph.lk.flip": {
+      "file": "glyph.lk.flip.mp3",
+      "text": "The k's kicking legs point to the right.",
+      "hash": "617c37e64a78b137",
+      "bytes": 19061
+    },
+    "glyph.lk.name": {
+      "file": "glyph.lk.name.mp3",
+      "text": "little kay",
+      "hash": "30904d22f7de088f",
+      "bytes": 8403
+    },
+    "glyph.lk.rhyme": {
+      "file": "glyph.lk.rhyme.mp3",
+      "text": "Big line down, then kick in and kick out. That's little kay!",
+      "hash": "fec6d6dbef336d96",
+      "bytes": 27629
+    },
+    "glyph.ll.name": {
+      "file": "glyph.ll.name.mp3",
+      "text": "little ell",
+      "hash": "143a96a6ade11815",
+      "bytes": 9030
+    },
+    "glyph.ll.rhyme": {
+      "file": "glyph.ll.rhyme.mp3",
+      "text": "Big line down. That's little ell!",
+      "hash": "4810d980c91ba97d",
+      "bytes": 19897
+    },
+    "glyph.lm.name": {
+      "file": "glyph.lm.name.mp3",
+      "text": "little em",
+      "hash": "ff35d1619ce18d44",
+      "bytes": 6104
+    },
+    "glyph.lm.rhyme": {
+      "file": "glyph.lm.rhyme.mp3",
+      "text": "Little line down, bump, bump. That's little em!",
+      "hash": "74d333660c3ea146",
+      "bytes": 22404
+    },
+    "glyph.ln.name": {
+      "file": "glyph.ln.name.mp3",
+      "text": "little en",
+      "hash": "d3e0a5d1cdd04a60",
+      "bytes": 10284
+    },
+    "glyph.ln.rhyme": {
+      "file": "glyph.ln.rhyme.mp3",
+      "text": "Little line down, then one bump. That's little en!",
+      "hash": "c47a65f0c28e4a40",
+      "bytes": 23658
+    },
+    "glyph.lo.name": {
+      "file": "glyph.lo.name.mp3",
+      "text": "little oh",
+      "hash": "0e622b1c284e9cd3",
+      "bytes": 10910
+    },
+    "glyph.lo.rhyme": {
+      "file": "glyph.lo.rhyme.mp3",
+      "text": "Start at the top and curve all the way around. That's little oh!",
+      "hash": "4f05c41741a7134c",
+      "bytes": 35779
+    },
+    "glyph.lr.name": {
+      "file": "glyph.lr.name.mp3",
+      "text": "little are",
+      "hash": "00e7e1e8cc2257e0",
+      "bytes": 9030
+    },
+    "glyph.lr.flip": {
+      "file": "glyph.lr.flip.mp3",
+      "text": "The r's little arm reaches out to the right.",
+      "hash": "2b20bcd934fdf882",
+      "bytes": 18852
+    },
+    "glyph.lt.name": {
+      "file": "glyph.lt.name.mp3",
+      "text": "little tee",
+      "hash": "ca9672b9f98296be",
+      "bytes": 7985
+    },
+    "glyph.lr.rhyme": {
+      "file": "glyph.lr.rhyme.mp3",
+      "text": "Little line down, bounce up, and a little arm to the right. That's little are!",
+      "hash": "fcc6240dae04a4ee",
+      "bytes": 35779
+    },
+    "glyph.lt.rhyme": {
+      "file": "glyph.lt.rhyme.mp3",
+      "text": "Big line down, then a little line across. That's little tee!",
+      "hash": "7b1915ad4e38c978",
+      "bytes": 33271
+    },
+    "glyph.lu.name": {
+      "file": "glyph.lu.name.mp3",
+      "text": "little you",
+      "hash": "017183f165415bdc",
+      "bytes": 7567
+    },
+    "glyph.lu.rhyme": {
+      "file": "glyph.lu.rhyme.mp3",
+      "text": "Down, curve up, then straight down. That's little you!",
+      "hash": "be0fcf155bd3978a",
+      "bytes": 27629
+    },
+    "glyph.lv.name": {
+      "file": "glyph.lv.name.mp3",
+      "text": "little vee",
+      "hash": "d18e5ab725ca4a23",
+      "bytes": 7985
+    },
+    "glyph.lv.rhyme": {
+      "file": "glyph.lv.rhyme.mp3",
+      "text": "Slide down, then slide up. That's little vee!",
+      "hash": "0ec1c5ad27b7ecb4",
+      "bytes": 24703
+    },
+    "glyph.lw.name": {
+      "file": "glyph.lw.name.mp3",
+      "text": "little double-you",
+      "hash": "c8b104f19c6ca138",
+      "bytes": 9030
+    },
+    "glyph.lw.rhyme": {
+      "file": "glyph.lw.rhyme.mp3",
+      "text": "Down, up, down, up. That's little double-you!",
+      "hash": "3f8ef341d5813590",
+      "bytes": 22404
+    },
+    "glyph.lx.name": {
+      "file": "glyph.lx.name.mp3",
+      "text": "little ex",
+      "hash": "8a71880187d2d61c",
+      "bytes": 9448
+    },
+    "glyph.ly.name": {
+      "file": "glyph.ly.name.mp3",
+      "text": "little why",
+      "hash": "89d54ac70787191c",
+      "bytes": 7985
+    },
+    "glyph.lx.rhyme": {
+      "file": "glyph.lx.rhyme.mp3",
+      "text": "Slide down to the right, then slide down to the left. That's little ex!",
+      "hash": "93b5df82e3a5ff83",
+      "bytes": 34316
+    },
+    "glyph.ly.rhyme": {
+      "file": "glyph.ly.rhyme.mp3",
+      "text": "Down, curve up, then a long tail down. That's little why!",
+      "hash": "f9680d7bb498c040",
+      "bytes": 30346
+    },
+    "glyph.ua.name": {
+      "file": "glyph.ua.name.mp3",
+      "text": "big ay",
+      "hash": "35d6b5a8be6dec05",
+      "bytes": 7567
+    },
+    "glyph.ua.rhyme": {
+      "file": "glyph.ua.rhyme.mp3",
+      "text": "Slide down to the left, slide down to the right, then a line across. That's big ay!",
+      "hash": "5039a6d8fee6d357",
+      "bytes": 41839
+    },
+    "glyph.ub.flip": {
+      "file": "glyph.ub.flip.mp3",
+      "text": "Big B's bumps are on the right.",
+      "hash": "bbb6de9c0e6c8b15",
+      "bytes": 15508
+    },
+    "glyph.ub.name": {
+      "file": "glyph.ub.name.mp3",
+      "text": "big bee",
+      "hash": "0e794dc7132d22f7",
+      "bytes": 7985
+    },
+    "glyph.uc.name": {
+      "file": "glyph.uc.name.mp3",
+      "text": "big see",
+      "hash": "3b98a50d059993a2",
+      "bytes": 8821
+    },
+    "glyph.ub.rhyme": {
+      "file": "glyph.ub.rhyme.mp3",
+      "text": "Big line down, then a bump and another bump. That's big bee!",
+      "hash": "faab15704ef016fe",
+      "bytes": 30973
+    },
+    "glyph.uc.flip": {
+      "file": "glyph.uc.flip.mp3",
+      "text": "Big C opens to the right.",
+      "hash": "673b4c67886038aa",
+      "bytes": 15090
+    },
+    "glyph.ud.name": {
+      "file": "glyph.ud.name.mp3",
+      "text": "big dee",
+      "hash": "c79777702c120374",
+      "bytes": 8403
+    },
+    "glyph.ud.flip": {
+      "file": "glyph.ud.flip.mp3",
+      "text": "Big D's big curve is on the right.",
+      "hash": "5b45edef21d2d3e8",
+      "bytes": 19897
+    },
+    "glyph.uc.rhyme": {
+      "file": "glyph.uc.rhyme.mp3",
+      "text": "Start near the top, curve around to the left, and stop. That's big see!",
+      "hash": "70426494188e3381",
+      "bytes": 33898
+    },
+    "glyph.ue.name": {
+      "file": "glyph.ue.name.mp3",
+      "text": "big ee",
+      "hash": "8fa44b13940d3751",
+      "bytes": 6522
+    },
+    "glyph.ue.flip": {
+      "file": "glyph.ue.flip.mp3",
+      "text": "Big E's arms all point to the right.",
+      "hash": "fab058f3fa10427b",
+      "bytes": 18434
+    },
+    "glyph.ud.rhyme": {
+      "file": "glyph.ud.rhyme.mp3",
+      "text": "Big line down, then a big curve around. That's big dee!",
+      "hash": "09d538600acf2829",
+      "bytes": 32853
+    },
+    "glyph.uf.flip": {
+      "file": "glyph.uf.flip.mp3",
+      "text": "Big F's arms point to the right.",
+      "hash": "4afac6d5ac329190",
+      "bytes": 16135
+    },
+    "glyph.uf.name": {
+      "file": "glyph.uf.name.mp3",
+      "text": "big eff",
+      "hash": "15caaa2209787ec2",
+      "bytes": 7149
+    },
+    "glyph.ue.rhyme": {
+      "file": "glyph.ue.rhyme.mp3",
+      "text": "Big line down, then three little lines across. That's big ee!",
+      "hash": "0f028b022fa7a481",
+      "bytes": 36615
+    },
+    "glyph.ug.name": {
+      "file": "glyph.ug.name.mp3",
+      "text": "big gee",
+      "hash": "c2882fd97d556be0",
+      "bytes": 7985
+    },
+    "glyph.ug.flip": {
+      "file": "glyph.ug.flip.mp3",
+      "text": "Big G opens to the right, with a little shelf inside.",
+      "hash": "5f6a3a11339f6a77",
+      "bytes": 26584
+    },
+    "glyph.uf.rhyme": {
+      "file": "glyph.uf.rhyme.mp3",
+      "text": "Big line down, then two little lines across. That's big eff!",
+      "hash": "1f94d57dee196e91",
+      "bytes": 27002
+    },
+    "glyph.uh.name": {
+      "file": "glyph.uh.name.mp3",
+      "text": "big aitch",
+      "hash": "f3dd2d3e3d0a4a5f",
+      "bytes": 9448
+    },
+    "glyph.ug.rhyme": {
+      "file": "glyph.ug.rhyme.mp3",
+      "text": "Curve around like a C, then a little shelf inside. That's big gee!",
+      "hash": "150992986e686f28",
+      "bytes": 29092
+    },
+    "glyph.uh.rhyme": {
+      "file": "glyph.uh.rhyme.mp3",
+      "text": "Big line down, big line down, little line across. That's big aitch!",
+      "hash": "c455c4fe846f08ac",
+      "bytes": 29092
+    },
+    "glyph.ui.name": {
+      "file": "glyph.ui.name.mp3",
+      "text": "big eye",
+      "hash": "9b00f766dfbd706d",
+      "bytes": 7985
+    },
+    "glyph.uj.flip": {
+      "file": "glyph.uj.flip.mp3",
+      "text": "Big J curls to the left at the bottom.",
+      "hash": "1757772349a42fa2",
+      "bytes": 18434
+    },
+    "glyph.ui.rhyme": {
+      "file": "glyph.ui.rhyme.mp3",
+      "text": "Big line down, then a little line on top and bottom. That's big eye!",
+      "hash": "2615f2e4865c741f",
+      "bytes": 36615
+    },
+    "glyph.uj.name": {
+      "file": "glyph.uj.name.mp3",
+      "text": "big jay",
+      "hash": "a734e333a82f92d9",
+      "bytes": 9030
+    },
+    "glyph.uj.rhyme": {
+      "file": "glyph.uj.rhyme.mp3",
+      "text": "Big line down with a hook to the left. That's big jay!",
+      "hash": "d6c36a862ed9170e",
+      "bytes": 25121
+    },
+    "glyph.uk.flip": {
+      "file": "glyph.uk.flip.mp3",
+      "text": "Big K's kicking legs point to the right.",
+      "hash": "a5f5e691a59dbac3",
+      "bytes": 19897
+    },
+    "glyph.uk.name": {
+      "file": "glyph.uk.name.mp3",
+      "text": "big kay",
+      "hash": "1af9898e9286e75b",
+      "bytes": 10284
+    },
+    "glyph.ul.flip": {
+      "file": "glyph.ul.flip.mp3",
+      "text": "Big L's foot points to the right.",
+      "hash": "3337069c684f62c8",
+      "bytes": 18434
+    },
+    "glyph.ul.name": {
+      "file": "glyph.ul.name.mp3",
+      "text": "big ell",
+      "hash": "8bdeff51a9a3f433",
+      "bytes": 6104
+    },
+    "glyph.uk.rhyme": {
+      "file": "glyph.uk.rhyme.mp3",
+      "text": "Big line down, then kick in and kick out. That's big kay!",
+      "hash": "f7b6e059d63b089f",
+      "bytes": 26166
+    },
+    "glyph.um.name": {
+      "file": "glyph.um.name.mp3",
+      "text": "big em",
+      "hash": "f7d71bea2fd7e4e4",
+      "bytes": 5686
+    },
+    "glyph.ul.rhyme": {
+      "file": "glyph.ul.rhyme.mp3",
+      "text": "Big line down, then a little line across. That's big ell!",
+      "hash": "d5bd12e510349a45",
+      "bytes": 32853
+    },
+    "glyph.um.rhyme": {
+      "file": "glyph.um.rhyme.mp3",
+      "text": "Big line down, slide down, slide up, big line down. That's big em!",
+      "hash": "dada5e76435a39d1",
+      "bytes": 31390
+    },
+    "glyph.un.name": {
+      "file": "glyph.un.name.mp3",
+      "text": "big en",
+      "hash": "cfb020773502009a",
+      "bytes": 6522
+    },
+    "glyph.un.flip": {
+      "file": "glyph.un.flip.mp3",
+      "text": "Big N goes down, slides down to the right, then goes straight up.",
+      "hash": "0d2d8f0e26cd29a1",
+      "bytes": 33271
+    },
+    "glyph.un.rhyme": {
+      "file": "glyph.un.rhyme.mp3",
+      "text": "Big line down, slide down to the corner, then straight up. That's big en!",
+      "hash": "f834bdfc298f4054",
+      "bytes": 36197
+    },
+    "glyph.uo.name": {
+      "file": "glyph.uo.name.mp3",
+      "text": "big oh",
+      "hash": "d3579a93853abcc5",
+      "bytes": 7149
+    },
+    "glyph.uo.rhyme": {
+      "file": "glyph.uo.rhyme.mp3",
+      "text": "Start at the top and curve all the way around. That's big oh!",
+      "hash": "60d4b880953df30f",
+      "bytes": 31808
+    },
+    "glyph.up.name": {
+      "file": "glyph.up.name.mp3",
+      "text": "big pee",
+      "hash": "8eb8fd9d566f851e",
+      "bytes": 8403
+    },
+    "glyph.up.flip": {
+      "file": "glyph.up.flip.mp3",
+      "text": "Big P's bump is on the right, at the top.",
+      "hash": "7a9841df3fc5faf4",
+      "bytes": 19897
+    },
+    "glyph.up.rhyme": {
+      "file": "glyph.up.rhyme.mp3",
+      "text": "Big line down, then a bump at the top. That's big pee!",
+      "hash": "edc3ce120d686150",
+      "bytes": 30555
+    },
+    "glyph.uq.name": {
+      "file": "glyph.uq.name.mp3",
+      "text": "big cue",
+      "hash": "76641eacab398a25",
+      "bytes": 9866
+    },
+    "glyph.uq.rhyme": {
+      "file": "glyph.uq.rhyme.mp3",
+      "text": "Curve all the way around, then a little tail. That's big cue!",
+      "hash": "820ae50db6ab9c6a",
+      "bytes": 28465
+    },
+    "glyph.ur.name": {
+      "file": "glyph.ur.name.mp3",
+      "text": "big are",
+      "hash": "c980d30b3c31f410",
+      "bytes": 8821
+    },
+    "glyph.ur.flip": {
+      "file": "glyph.ur.flip.mp3",
+      "text": "Big R's bump and leg are on the right.",
+      "hash": "28942b5fb4b646b7",
+      "bytes": 18852
+    },
+    "glyph.ur.rhyme": {
+      "file": "glyph.ur.rhyme.mp3",
+      "text": "Big line down, a bump at the top, then a leg. That's big are!",
+      "hash": "125734fe24666b5a",
+      "bytes": 32226
+    },
+    "glyph.us.flip": {
+      "file": "glyph.us.flip.mp3",
+      "text": "Big S starts at the top right and curves to the left first.",
+      "hash": "73efe509ca9201d5",
+      "bytes": 28047
+    },
+    "glyph.us.name": {
+      "file": "glyph.us.name.mp3",
+      "text": "big ess",
+      "hash": "1dcab01666d17e09",
+      "bytes": 7149
+    },
+    "glyph.us.rhyme": {
+      "file": "glyph.us.rhyme.mp3",
+      "text": "Curve to the left, slide across, then curve back. That's big ess!",
+      "hash": "2237dd10701986ba",
+      "bytes": 33689
+    },
+    "glyph.ut.name": {
+      "file": "glyph.ut.name.mp3",
+      "text": "big tee",
+      "hash": "0a87dab8388295c4",
+      "bytes": 7567
+    },
+    "glyph.uu.name": {
+      "file": "glyph.uu.name.mp3",
+      "text": "big you",
+      "hash": "d9473ab921fc2d64",
+      "bytes": 6940
+    },
+    "glyph.uu.rhyme": {
+      "file": "glyph.uu.rhyme.mp3",
+      "text": "Down, curve around, and up. That's big you!",
+      "hash": "74cc7469e7125f8a",
+      "bytes": 23240
+    },
+    "glyph.ut.rhyme": {
+      "file": "glyph.ut.rhyme.mp3",
+      "text": "Line across the top, then a big line down. That's big tee!",
+      "hash": "2ea12f9bc68656c0",
+      "bytes": 34316
+    },
+    "glyph.uv.name": {
+      "file": "glyph.uv.name.mp3",
+      "text": "big vee",
+      "hash": "c578724aeea452de",
+      "bytes": 6940
+    },
+    "glyph.uw.name": {
+      "file": "glyph.uw.name.mp3",
+      "text": "big double-you",
+      "hash": "ee5b6dbe7f8d69c9",
+      "bytes": 9866
+    },
+    "glyph.uv.rhyme": {
+      "file": "glyph.uv.rhyme.mp3",
+      "text": "Slide down, then slide up. That's big vee!",
+      "hash": "bb470ff69539747a",
+      "bytes": 20524
+    },
+    "glyph.uw.rhyme": {
+      "file": "glyph.uw.rhyme.mp3",
+      "text": "Down, up, down, up. That's big double-you!",
+      "hash": "d0bcae84f8ab52ae",
+      "bytes": 22822
+    },
+    "glyph.ux.name": {
+      "file": "glyph.ux.name.mp3",
+      "text": "big ex",
+      "hash": "422ba9e815abba43",
+      "bytes": 7985
+    },
+    "glyph.ux.rhyme": {
+      "file": "glyph.ux.rhyme.mp3",
+      "text": "Slide down to the right, then slide down to the left. That's big ex!",
+      "hash": "2e7aa7eee9124045",
+      "bytes": 29928
+    },
+    "glyph.uy.name": {
+      "file": "glyph.uy.name.mp3",
+      "text": "big why",
+      "hash": "cad43cb277316f20",
+      "bytes": 9030
+    },
+    "glyph.uy.rhyme": {
+      "file": "glyph.uy.rhyme.mp3",
+      "text": "Slide in, slide in, then a line down. That's big why!",
+      "hash": "82391f95c1cd271b",
+      "bytes": 28883
+    },
+    "glyph.uz.name": {
+      "file": "glyph.uz.name.mp3",
+      "text": "big zee",
+      "hash": "8470a468c7387684",
+      "bytes": 8821
+    },
+    "glyph.uz.flip": {
+      "file": "glyph.uz.flip.mp3",
+      "text": "Big Z zips right, slides down to the left, then zips right again.",
+      "hash": "68e133b97e0a196b",
+      "bytes": 35779
+    },
+    "glyph.uz.rhyme": {
+      "file": "glyph.uz.rhyme.mp3",
+      "text": "Zip across, slide down, zip across. That's big zee!",
+      "hash": "92da9cd38b69279b",
+      "bytes": 33271
+    }
+  },
+  "generatedAt": "2026-09-04T13:19:50.880Z"
+}

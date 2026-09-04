@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dot's Writing Quest</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="description" content="Trace it, write it, spot the backwards one. A letters-and-numbers game for the iPad." />
+    <meta name="theme-color" content="#fff4dc" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Add to Home Screen on iPad launches this without Safari's chrome. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dot's Quest" />
+    <link rel="apple-touch-icon" href="icons/icon-180.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="topbar" id="topbar">
+        <button id="back-button" class="icon-button topbar__back" type="button" aria-label="Back">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="topbar__title" id="topbar-title"></div>
+        <div class="topbar__right">
+          <div class="quest-dots is-hidden" id="quest-dots" aria-label="Quest progress"></div>
+          <div class="stars-badge" id="stars-badge" aria-label="Stars earned">
+            <span class="stars-badge__icon" aria-hidden="true">⭐</span>
+            <span class="stars-badge__count" id="stars-count">0</span>
+          </div>
+        </div>
+      </header>
+
+      <main id="screen" class="screen"></main>
+
+      <footer class="dotbar" id="dotbar">
+        <div class="dotbar__dot" id="dot-home"></div>
+        <div class="bubble" id="bubble">
+          <span class="bubble__text" id="bubble-text">Hi!</span>
+        </div>
+      </footer>
+    </div>
+
+    <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+    <div id="overlay" class="overlay is-hidden"></div>
+
+    <noscript>Dot's Writing Quest needs JavaScript turned on.</noscript>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

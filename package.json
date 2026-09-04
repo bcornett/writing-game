@@ -1,0 +1,21 @@
+{
+  "name": "dots-writing-quest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dot's Writing Quest — a kindergarten letter-and-number game for the iPad that teaches which way a 5, a 2, a b and a d face: trace it, write it, spot the backwards one, pop the flipped ones.",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "start:http": "node tools/serve.mjs --http",
+    "test": "node --test 'tests/**/*.test.js'",
+    "voices": "node tools/make-voices.mjs",
+    "icons": "node tools/make-icons.mjs",
+    "qr": "node tools/make-qr.mjs",
+    "sw": "node tools/make-sw.mjs",
+    "cert": "node tools/make-cert.mjs",
+    "sweep": "node dev/grade-sweep.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

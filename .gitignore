@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+*.log
+
+# Generated for whatever machine ran `npm run qr` — not portable.
+qr.png
+
+# Local editor / tool state
+.vscode/
+.idea/
+
+# Local TLS certificate authority and key. Never commit these.
+certs/
