@@ -7,9 +7,10 @@
  * silent because a file is missing.
  *
  * Lines are played in sequence — `say('find_real', 'glyph.d5.name')` says
- * "Find the real… five" — and a new request interrupts whatever was playing,
- * so the child never has to wait for Dot to finish a sentence she has moved
- * on from.
+ * "Find the real… five" — and a new request interrupts whatever was playing.
+ * Interrupting always settles the interrupted `say()` promise, and every
+ * clip has a time limit, so a caller waiting for Dot to finish can never be
+ * left hanging (a backgrounded tab, a clip that never fires "ended").
  *
  * On iOS an <audio> element may only start playing inside a user gesture
  * until it has been "unlocked" once, so `unlock()` is called from the first
@@ -19,8 +20,32 @@
 
 import { phraseText } from '../core/phrases.js';
 
-const SILENT_MP3 =
-  'data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYyR0NQAAAAAAAAAAAAAAAAAAAAAP/7EGQAAAKgAAA0AAAAABACAAAAABIAAAAAAAAAAAAAAAAAAAExhdmM1OC4xMwAAAAAAAAAAAAAAACQAAAAAAAAAAAGGMkdDUAAAAAAAAAAAAAAAAAAAAAD/+xBkAAACoAAANAAAAAAQAgAAAAASAAAAAAAAAAAAAAAAAAAB';
+/** A 50 ms silent WAV, built by hand: the unlock sound nobody hears. */
+function silentWav() {
+  const rate = 8000;
+  const samples = rate / 20;
+  const buf = new ArrayBuffer(44 + samples * 2);
+  const v = new DataView(buf);
+  const str = (o, s) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+  str(0, 'RIFF');
+  v.setUint32(4, 36 + samples * 2, true);
+  str(8, 'WAVE');
+  str(12, 'fmt ');
+  v.setUint32(16, 16, true);
+  v.setUint16(20, 1, true);
+  v.setUint16(22, 1, true);
+  v.setUint32(24, rate, true);
+  v.setUint32(28, rate * 2, true);
+  v.setUint16(32, 2, true);
+  v.setUint16(34, 16, true);
+  str(36, 'data');
+  v.setUint32(40, samples * 2, true);
+  let bin = '';
+  for (const b of new Uint8Array(buf)) bin += String.fromCharCode(b);
+  return `data:audio/wav;base64,${btoa(bin)}`;
+}
+
+const CLIP_LIMIT_MS = 15000;
 
 export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
   let manifest = { clips: {} };
@@ -28,6 +53,8 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
   let unlocked = false;
   let audio = null;
   let generation = 0;
+  /** Settles whatever is playing right now; set by each player, called by stop(). */
+  let interrupt = null;
   const buffers = new Map();
 
   async function load() {
@@ -47,8 +74,12 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
     audio = new Audio();
     audio.preload = 'auto';
     audio.setAttribute('playsinline', '');
-    audio.src = SILENT_MP3;
-    audio.play().catch(() => {});
+    try {
+      audio.src = silentWav();
+      audio.play().catch(() => {});
+    } catch {
+      /* ignore */
+    }
     if ('speechSynthesis' in window) {
       // Warm the synthesis engine so the first fallback line is not late.
       try {
@@ -67,7 +98,11 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
   function stop() {
     generation++;
     if (audio) {
-      audio.pause();
+      try {
+        audio.pause();
+      } catch {
+        /* ignore */
+      }
       audio.onended = null;
       audio.onerror = null;
     }
@@ -76,19 +111,46 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
     } catch {
       /* ignore */
     }
+    const settle = interrupt;
+    interrupt = null;
+    settle?.();
   }
 
-  function playElement(url) {
+  /**
+   * Run one playback. `start(finish)` begins it and calls finish() when it
+   * ends or finish(error) when it fails. stop() and the time limit both
+   * count as finishing.
+   */
+  function guarded(start, limitMs) {
     return new Promise((resolve, reject) => {
-      if (!audio) audio = new Audio();
-      audio.onended = () => resolve();
-      audio.onerror = () => reject(new Error('audio element error'));
-      audio.src = url;
-      audio.currentTime = 0;
-      const p = audio.play();
-      if (p && p.catch) p.catch(reject);
+      let settled = false;
+      const finish = (error) => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        if (interrupt === finish) interrupt = null;
+        if (error) reject(error);
+        else resolve();
+      };
+      const timer = setTimeout(() => finish(), limitMs);
+      interrupt = finish;
+      try {
+        start(finish);
+      } catch (error) {
+        finish(error);
+      }
     });
   }
+
+  const playElement = (url) =>
+    guarded((finish) => {
+      if (!audio) audio = new Audio();
+      audio.onended = () => finish();
+      audio.onerror = () => finish(new Error('audio element error'));
+      audio.src = url;
+      const p = audio.play();
+      if (p && p.catch) p.catch((error) => finish(error || new Error('play refused')));
+    }, CLIP_LIMIT_MS);
 
   async function playBuffer(url) {
     const ctx = sfx?.context;
@@ -100,18 +162,25 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
       buffer = await ctx.decodeAudioData(await res.arrayBuffer());
       buffers.set(url, buffer);
     }
-    await new Promise((resolve) => {
-      const src = ctx.createBufferSource();
-      src.buffer = buffer;
-      src.connect(ctx.destination);
-      src.onended = resolve;
-      src.start();
+    let source = null;
+    await guarded((finish) => {
+      source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(ctx.destination);
+      source.onended = () => finish();
+      source.start();
+    }, buffer.duration * 1000 + 800).finally(() => {
+      try {
+        source?.stop();
+      } catch {
+        /* already stopped */
+      }
     });
   }
 
-  function speakText(text) {
-    return new Promise((resolve) => {
-      if (!('speechSynthesis' in window)) return resolve();
+  const speakText = (text) =>
+    guarded((finish) => {
+      if (!('speechSynthesis' in window)) return finish();
       const u = new SpeechSynthesisUtterance(text);
       u.rate = 0.95;
       u.pitch = 1.05;
@@ -121,11 +190,10 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
         voices.find((v) => v.lang === 'en-US' && /female|karen|moira|tessa|ava/i.test(v.name)) ||
         voices.find((v) => v.lang?.startsWith('en'));
       if (pick) u.voice = pick;
-      u.onend = resolve;
-      u.onerror = resolve;
+      u.onend = () => finish();
+      u.onerror = () => finish();
       window.speechSynthesis.speak(u);
-    });
-  }
+    }, text.length * 80 + 2500);
 
   async function playOne(id, gen) {
     const text = phraseText(id) ?? manifest.clips[id]?.text ?? id;
@@ -157,6 +225,7 @@ export function createVoice({ base = 'audio/voice/', sfx = null } = {}) {
       const id = ids[i];
       if (!id) continue;
       await playOne(id, gen);
+      if (gen !== generation) return;
       if (i < ids.length - 1) await new Promise((r) => setTimeout(r, 90));
     }
   }

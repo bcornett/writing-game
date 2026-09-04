@@ -166,8 +166,11 @@ export function templateOf(glyph) {
   const twins = {};
   for (const name of TRANSFORMS) {
     const twin = candidateOf(transformStrokes(strokes, name));
-    // A mirrored 0 is a 0; only keep twins that actually look different.
-    if (matchScore(base.points, twin).score > GRADE.distinct) twins[name] = twin;
+    // A mirrored 0 is a 0; only keep twins that actually look different —
+    // from the glyph, and from each other (a turned 3 is just a mirrored 3).
+    if (matchScore(base.points, twin).score <= GRADE.distinct) continue;
+    if (Object.values(twins).some((kept) => matchScore(kept.points, twin).score <= GRADE.distinct)) continue;
+    twins[name] = twin;
   }
   t = { id: glyph.id, kind: glyph.kind, strokes, hasDot, ...base, twins };
   cache.set(glyph.id, t);

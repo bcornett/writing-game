@@ -24,7 +24,10 @@ export function mountTrace(root, app, { glyph: id, rounds = 3, level = null, que
   let disposed = false;
   let tracing = false;
   let trace = null;
-  let currentLevel = 1;
+  // Decided once: a round finishing lifts her mastery, and the next round
+  // should fade the road one step, not jump to the end.
+  const baseLevel = level ?? app.levelFor(id);
+  let currentLevel = baseLevel;
   let lastHint = 0;
 
   app.setTitle(`Trace ${glyphTitle(g)}`);
@@ -81,8 +84,9 @@ export function mountTrace(root, app, { glyph: id, rounds = 3, level = null, que
     if (currentLevel <= 2) guideG.appendChild(strokePath(pts, { class: `trace-guide${currentLevel === 2 ? ' trace-guide--faint' : ''}` }));
     const len = Math.max(0.01, polylineLength(pts));
     fill.setAttribute('d', strokePath(pts).getAttribute('d'));
-    fill.setAttribute('stroke-dasharray', `${len} ${len}`);
-    fill.setAttribute('stroke-dashoffset', len);
+    // Gap longer than the stroke, hidden offset past its end: see demo.js.
+    fill.setAttribute('stroke-dasharray', `${len} ${len + 4}`);
+    fill.setAttribute('stroke-dashoffset', len + 2);
     fill.dataset.len = String(len);
     if (currentLevel === 1) arrowsG.appendChild(strokeArrows(pts));
     startG.appendChild(startDot(pts[0], i + 1));
@@ -92,7 +96,7 @@ export function mountTrace(root, app, { glyph: id, rounds = 3, level = null, que
 
   function setFill(progress) {
     const len = Number(fill.dataset.len || 1);
-    fill.setAttribute('stroke-dashoffset', (len * (1 - progress)).toFixed(3));
+    fill.setAttribute('stroke-dashoffset', ((len + 2) * (1 - progress)).toFixed(3));
   }
 
   const hint = async (ids) => {
@@ -159,7 +163,7 @@ export function mountTrace(root, app, { glyph: id, rounds = 3, level = null, que
   }
 
   async function startRound() {
-    currentLevel = level ?? Math.min(3, app.levelFor(id) + round);
+    currentLevel = level ?? Math.min(3, baseLevel + round);
     trace = createTrace(g, { strictness: app.progress.strictness });
     renderRoad(currentLevel);
     setupStroke();

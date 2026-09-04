@@ -104,7 +104,15 @@ const app = {
   /** Dot says these lines (voice + bubble). Resolves when she is done or interrupted. */
   say(...ids) {
     const clean = ids.filter(Boolean);
-    const text = clean.map((id) => phraseText(id) ?? '').filter(Boolean).join(' ');
+    const pieces = clean.map((id) => phraseText(id) ?? '').filter(Boolean);
+    // "Let's write" + "five" + "Line down…" reads as "Let's write… five. Line down…".
+    const text = pieces
+      .map((piece, i) => {
+        if (/[.!?…]$/.test(piece)) return piece;
+        const next = pieces[i + 1];
+        return next && /^[a-z]/.test(next) ? `${piece}…` : `${piece}.`;
+      })
+      .join(' ');
     if (text) app.bubble(text);
     return voice.say(...clean);
   },

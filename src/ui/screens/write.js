@@ -175,6 +175,10 @@ export function mountWrite(root, app, { glyph: id, quest = null } = {}) {
       lines = ['so_close'];
     }
     const saying = app.say(...lines);
+    // Stars first: a new sticker takes over the overlay, and the result card
+    // should be what she is left looking at.
+    if (result.stars > 0) await app.addStars(result.stars);
+    if (disposed) return;
 
     const cardEl = el('div', 'overlay__card');
     cardEl.appendChild(el('h2', 'overlay__title', TITLES[o] ?? 'Hmm…'));
@@ -242,7 +246,6 @@ export function mountWrite(root, app, { glyph: id, quest = null } = {}) {
     }
     cardEl.appendChild(actions);
     app.overlay(cardEl);
-    if (result.stars > 0) await app.addStars(result.stars);
     await saying;
   }
 

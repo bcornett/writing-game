@@ -11,7 +11,7 @@
  * game's menu offers an "Update" button that activates it.
  */
 
-const VERSION = 'ddc7ad4dd3f1';
+const VERSION = '1a423f3e9151';
 const CACHE = 'writing-quest-' + VERSION;
 
 const ASSETS = [

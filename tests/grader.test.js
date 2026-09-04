@@ -157,6 +157,8 @@ test('twins are distinct where they should be, and only there', () => {
   assert.ok(distinctTransforms(GLYPH_BY_ID['s']).includes('mirror'));
   assert.ok(distinctTransforms(GLYPH_BY_ID['z']).includes('mirror'));
   assert.ok(!distinctTransforms(GLYPH_BY_ID['1']).includes('mirror'));
+  assert.deepEqual(distinctTransforms(GLYPH_BY_ID['3']), ['mirror'], 'a turned 3 looks like a mirrored 3, so it is not a second twin');
+  assert.deepEqual(distinctTransforms(GLYPH_BY_ID['b']), ['mirror', 'flip', 'rot'], 'd, p and q are all different');
   assert.deepEqual(distinctTransforms(GLYPH_BY_ID['o']), []);
   assert.deepEqual(distinctTransforms(GLYPH_BY_ID['O']), []);
   assert.deepEqual(distinctTransforms(GLYPH_BY_ID['1']), []);

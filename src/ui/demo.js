@@ -16,9 +16,12 @@ export function createDemo(svg, glyphId, { road = true, lines = true } = {}) {
   const layer = svgEl('g', { class: 'demo-layer' });
   if (lines) layer.appendChild(guideLines());
   if (road) for (const pts of strokes) layer.appendChild(strokePath(pts, { class: 'road' }));
+  // The dash gap is longer than the stroke and the hidden offset overshoots
+  // by 2 units: with round caps, a dash boundary sitting exactly on the
+  // path's end draws a stray dot, so the boundary is kept off the path.
   const fills = strokes.map((pts) => {
     const len = Math.max(0.01, polylineLength(pts));
-    const path = strokePath(pts, { class: 'trace-fill trace-fill--demo', 'stroke-dasharray': `${len} ${len}`, 'stroke-dashoffset': len });
+    const path = strokePath(pts, { class: 'trace-fill trace-fill--demo', 'stroke-dasharray': `${len} ${len + 4}`, 'stroke-dashoffset': len + 2 });
     layer.appendChild(path);
     return { path, len };
   });
@@ -31,7 +34,7 @@ export function createDemo(svg, glyphId, { road = true, lines = true } = {}) {
   let cancelled = false;
 
   const reset = () => {
-    fills.forEach(({ path, len }) => path.setAttribute('stroke-dashoffset', len));
+    fills.forEach(({ path, len }) => path.setAttribute('stroke-dashoffset', len + 2));
     mini.show(false);
   };
 
@@ -56,7 +59,7 @@ export function createDemo(svg, glyphId, { road = true, lines = true } = {}) {
           if (cancelled) return resolve(false);
           const t = Math.min(1, (now - start) / duration);
           const eased = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-          path.setAttribute('stroke-dashoffset', (len * (1 - eased)).toFixed(3));
+          path.setAttribute('stroke-dashoffset', ((len + 2) * (1 - eased)).toFixed(3));
           const p = pointAt(pts, eased);
           mini.moveTo(p[0], p[1]);
           if (t < 1) raf = requestAnimationFrame(step);
