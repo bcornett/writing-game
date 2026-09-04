@@ -53,7 +53,7 @@ test('the generated clips match the catalogue (run `npm run voices` if not)', ()
 test('the .env reader copes with comments, quotes and blanks', () => {
   const path = join(ROOT, 'tests', 'fixtures', 'sample.env');
   const env = readEnv(path);
-  assert.equal(env.ELEVENLABS_API_KEY, 'sk_test_123');
+  assert.equal(env.ELEVENLABS_API_KEY, 'not-a-real-key-123');
   assert.equal(env.ELEVENLABS_VOICE_ID, 'voice with spaces');
   assert.equal(env.COMMENTED, undefined);
   assert.deepEqual(readEnv(join(ROOT, 'tests', 'fixtures', 'does-not-exist.env')), {});
