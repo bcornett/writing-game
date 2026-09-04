@@ -11,3 +11,8 @@ qr.png
 
 # Local TLS certificate authority and key. Never commit these.
 certs/
+
+# Secrets. The ElevenLabs key lives here and must never be committed.
+.env
+.env.*
+!.env.example
