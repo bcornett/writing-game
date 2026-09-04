@@ -51,9 +51,15 @@ Last updated: 2026-09-04
   the label.
 - Spot-it cards sat left of centre.
 
+- Deployed: public repo `bcornett/writing-game`, GitHub Pages from `main`
+  (`.nojekyll`), live at https://bcornett.github.io/writing-game/ — https, so
+  the service worker installs and it plays offline once opened. `qr.png`
+  points there.
+- Landscape-phone layout: drawing screens put the buttons beside the card,
+  twins goes side by side, tiles fit six across.
+
 ## Next
 
-- Deploy: public GitHub repo + GitHub Pages, `qr.png` for the fridge.
 - Watch a real five-year-old use it: the tracing tolerance (`TRACE.tolerance`)
   and the grade bands (`GRADE.bands`) are tuned on synthetic drawings and
   will want a nudge either way after real use.

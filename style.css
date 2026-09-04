@@ -355,7 +355,7 @@ input {
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   width: 100%;
 }
@@ -1380,7 +1380,7 @@ input {
     font-size: 30px;
   }
   .tiles {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
   .tile {
@@ -1424,41 +1424,29 @@ input {
 
 @media (max-height: 480px) {
   .dotbar {
-    min-height: 60px;
+    min-height: 56px;
     padding-top: 2px;
   }
   .dotbar__dot {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
   }
   .bubble {
-    min-height: 44px;
-    font-size: 16px;
+    min-height: 42px;
+    font-size: 15px;
     padding: 6px 14px;
   }
   .topbar {
-    min-height: 50px;
+    min-height: 48px;
     padding-bottom: 2px;
   }
   .topbar__back {
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
+    font-size: 32px;
   }
-  .draw-card {
-    width: min(100%, calc(100dvh - 170px));
-  }
-  .screen-controls {
-    margin-top: 6px;
-  }
-  .tiles {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .tile {
-    min-height: 70px;
-    font-size: 14px;
-  }
-  .tile__emoji {
-    font-size: 26px;
+  .topbar__title {
+    font-size: 20px;
   }
   .home {
     gap: 8px;
@@ -1467,15 +1455,128 @@ input {
     display: none;
   }
   .home__title {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  .home__title span {
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .home__play {
+    width: min(100%, 320px);
+  }
+  .btn--big {
+    min-height: 56px;
+    font-size: 22px;
+  }
+  .tiles {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 8px;
+    padding-right: 64px;
+  }
+  .tile {
+    min-height: 64px;
+    font-size: 13px;
+    gap: 2px;
+  }
+  .tile__emoji {
+    font-size: 24px;
+  }
+  .gear {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+  }
+  /* Drawing screens: card on the left, buttons stacked on the right. */
+  .draw-wrap {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+  .draw-card {
+    width: min(calc(100dvh - 120px), 60vw);
+  }
+  .screen-controls {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 10px;
+  }
+  .screen-controls .btn {
+    min-height: 50px;
+    font-size: 17px;
+    padding: 0 16px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .screen-controls .btn--big {
+    min-height: 56px;
+    font-size: 20px;
+  }
+  .spot {
+    gap: 8px;
   }
   .spot__cards {
     grid-template-columns: repeat(4, minmax(0, 200px));
+    gap: 10px;
   }
   .spot-card {
-    max-height: calc(100dvh - 190px);
+    max-height: calc(100dvh - 180px);
+  }
+  .twins {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px 24px;
+  }
+  .twins .round-pips {
+    width: 100%;
+    justify-content: center;
   }
   .twins__shown {
-    width: calc(100dvh - 300px);
+    width: calc(100dvh - 150px);
+  }
+  .twins__choices {
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+  }
+  .twins__choice {
+    min-height: 64px;
+    font-size: 30px;
+    max-width: none;
+    min-width: 200px;
+  }
+  .twins__choice .glyph-svg {
+    width: 48px;
+    height: 48px;
+  }
+  .trick {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+  .trick svg {
+    width: 100px;
+    height: 54px;
+  }
+  .result__pane {
+    width: 100px;
+    height: 100px;
+  }
+  .overlay__card {
+    padding: 14px 18px;
+    gap: 8px;
+  }
+  .overlay__title {
+    font-size: 24px;
+  }
+  .overlay__big {
+    font-size: 64px;
+  }
+  .stickers__grid {
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 8px;
+  }
+  .sticker {
+    font-size: 36px;
   }
 }
